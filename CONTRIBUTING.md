@@ -70,8 +70,3 @@ You can use the local [`next.js`](https://nextjs.org) dev server within `package
 and iterate on your changes in the gallery. From the `packages/visx-demo` folder run `yarn dev` to
 start the next server which (if correctly sym-linked) will also watch for changes you make to other
 packages (upon re-building them, see above section).
-
-#### Config generation
-
-`visx` uses [`@airbnb/nimbus`](https://github.com/airbnb/nimbus) to generate build configuration for
-`eslint`, `prettier`, `jest`, `babel`, and `typescript`.
