@@ -54,13 +54,13 @@ jobs:
         run: yarn build
         working-directory: './packages/visx-demo/'
 
-      - name: 🦛 Run happo
-        run: yarn run happo-ci-github-actions
-        working-directory: './packages/visx-demo/'
-        env:
-          HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
-          HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
-          HAPPO_COMMAND: '../../node_modules/happo.io/build/cli.js'
+      # - name: 🦛 Run happo
+      #   run: yarn run happo-ci-github-actions
+      #   working-directory: './packages/visx-demo/'
+      #   env:
+      #     HAPPO_API_KEY: ${{ secrets.HAPPO_API_KEY }}
+      #     HAPPO_API_SECRET: ${{ secrets.HAPPO_API_SECRET }}
+      #     HAPPO_COMMAND: '../../node_modules/happo.io/build/cli.js'
 
       # @TODO
       # this fails on forks, we need to update workflow event type to `pull_request_target`
